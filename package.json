@@ -1,0 +1,17 @@
+{
+  "name": "course-poo-with-typescript",
+  "version": "1.0.0",
+  "description": "<p>This repo is for the course <a href=\"https://platzi.com/cursos/typescript-poo/\">Course of TypeScript: POO and Async</a></p>",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "ts-node": "^10.9.2"
+  }
+}
