@@ -1,6 +1,6 @@
 //@ts-check
 
-export class Animal {
+export abstract class Animal {
   constructor(protected name: string) {
 
   }
@@ -14,12 +14,9 @@ export class Animal {
     console.log('Dooooo');
   }
 }
-const pug = new Animal('Bruce');
+// const pug = new Animal('Bruce');
 
 pug.move();
-
-let message = pug.greeting();
-console.log(message);
 
 export class Dog extends Animal {
 
@@ -38,10 +35,10 @@ export class Dog extends Animal {
   }
 }
 
-let nina = new Dog('Nina', 'Haziel');
-console.log(nina.greeting());
-nina.woof(1);
-console.log(nina.owner);
-nina.move();
+// let nina = new Dog('Nina', 'Haziel');
+// console.log(nina.greeting());
+// nina.woof(1);
+// console.log(nina.owner);
+// nina.move();
 // con protected podemos acceder a las propiedades
 // desde la clase hija pero no desde fuera de la clase hija
