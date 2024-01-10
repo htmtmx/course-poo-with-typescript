@@ -5,7 +5,7 @@ import axios from "axios";
 
 export class BaseHttpService<TypeClass>{
   // data: TypeClass[] = [];
-  constructor(private url: string) {
+  constructor(protected url: string) {
 
   }
   async getAll() {
