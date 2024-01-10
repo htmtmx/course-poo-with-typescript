@@ -1,9 +1,10 @@
 import { Product } from "./../models/product.model";
 import { CreateProductDto, UpdateProductDto } from "./../dtos/product.dto";
 import { faker } from "@faker-js/faker";
+import { ProductService } from "../models/porduct-service.model";
 
 
-export class ProductMemoryService {
+export class ProductMemoryService implements ProductService {
   private products: Product[] = [];
   create(data: CreateProductDto): Product {
     const newProduct = {
