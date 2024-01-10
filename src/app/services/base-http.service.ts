@@ -3,7 +3,7 @@ import { Category } from "../models/category.model";
 import { Product } from "../models/product.model";
 import axios from "axios";
 
-export class BaseHettpService<TypeClass>{
+export class BaseHttpService<TypeClass>{
   // data: TypeClass[] = [];
   constructor(private url: string) {
 
@@ -18,22 +18,22 @@ export class BaseHettpService<TypeClass>{
   }
 }
 
-// const service = new BaseHettpService<string>();
+// const service = new BaseHttpService<string>();
 // // service.data
 // service.getAll
 
-// const service1 = new BaseHettpService<Category>();
+// const service1 = new BaseHttpService<Category>();
 // // service1.data
 // service1.getAll
 
 (async () => {
   const url1 = 'https://api.escuelajs.co/api/v1/products'
-  const serviceProduct = new BaseHettpService<Product>(url1);
+  const serviceProduct = new BaseHttpService<Product>(url1);
   const rta = await serviceProduct.getAll()
   console.log(rta)
 
   const url2 = 'https://api.escuelajs.co/api/v1/categories'
-  const serviceCategory = new BaseHettpService<Category>(url2);
+  const serviceCategory = new BaseHttpService<Category>(url2);
   const rtaCategory = await serviceCategory.getAll()
   console.log(rtaCategory)
 
